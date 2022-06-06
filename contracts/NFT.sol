@@ -79,7 +79,7 @@ contract MyNFT is ERC721, ERC721Pausable, ERC721Burnable, AccessControlEnumerabl
         _safeMint(_to,tokenId);
     }
 
-    function batchMint(address _to, uint256 _nftType, uint256 _numberOfTokens) external  onlyRole(MINTER_ROLE) {
+    function batchMint(address _to, uint256 _nftType, uint256 _numberOfTokens) external  onlyRole(MINTER_ROLE) whenNotPaused(){
         for (uint256 i = 0; i < _numberOfTokens; i++) {
             mint(_to, _nftType);
         }

@@ -6,7 +6,9 @@
     "@nomiclabs/hardhat-etherscan": "^3.0.3",
     "@nomiclabs/hardhat-waffle": "^2.0.3",
     "@openzeppelin/contracts": "^4.6.0",
+    "@truffle/hdwallet-provider": "^2.0.8",
     "dotenv": "^16.0.1",
-    "hardhat-gas-reporter": "^1.0.8"
+    "hardhat-gas-reporter": "^1.0.8",
+    "web3": "^1.7.3"
   }
 }

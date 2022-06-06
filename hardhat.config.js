@@ -11,19 +11,26 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   }
 });
 
-// task("verify_contract","verifying all contract",async(taskArgs,hre) =>{
-//   await hre.run("verify:verify", {
-//       address: "0xc3d73F6Df1442Fd084Ce343112Ba0458be833a5d",
-//       constructorArguments: ["https://mobiapi.owens.market/uri/", "0xb11f09290AaeD4aEe4e98aecBF986Bd2262D2718", "0xb11f09290AaeD4aEe4e98aecBF986Bd2262D2718", "0xb11f09290AaeD4aEe4e98aecBF986Bd2262D2718"],
-//       });
-// })
-
 task("verify_contract","verifying all contract",async(taskArgs,hre) =>{
-    await hre.run("verify:verify", {
-        address: "0x849fB1141Df741326caF2f2260458f3CC76aEcCe",
-        constructorArguments: ["https://mobiapi.owens.market/uri/", 2, "0xb11f09290AaeD4aEe4e98aecBF986Bd2262D2718", "0xb11f09290AaeD4aEe4e98aecBF986Bd2262D2718", "0xb11f09290AaeD4aEe4e98aecBF986Bd2262D2718"],
-        });
-  })
+  await hre.run("verify:verify", {
+      address: "0xEC182bD798DEb589776c773FfCE8Acf976726515",
+      constructorArguments: ["https://mobiapi.owens.market/uri/", "0xb11f09290AaeD4aEe4e98aecBF986Bd2262D2718", "0xb11f09290AaeD4aEe4e98aecBF986Bd2262D2718", "0xb11f09290AaeD4aEe4e98aecBF986Bd2262D2718"],
+      });
+})
+
+// task("verify_contract","verifying all contract",async(taskArgs,hre) =>{
+//     await hre.run("verify:verify", {
+//         address: "0x849fB1141Df741326caF2f2260458f3CC76aEcCe",
+//         constructorArguments: ["https://mobiapi.owens.market/uri/", 2, "0xb11f09290AaeD4aEe4e98aecBF986Bd2262D2718", "0xb11f09290AaeD4aEe4e98aecBF986Bd2262D2718", "0xb11f09290AaeD4aEe4e98aecBF986Bd2262D2718"],
+//         });
+//   })
+
+// task("verify_contract","verifying all contract",async(taskArgs,hre) =>{
+//     await hre.run("verify:verify", {
+//         address: "0xea49816D5FF6F37C9D0d738d55f969E1Aa048086",
+//         constructorArguments: ["Token","TKN"],
+//         });
+//   })
 
 module.exports = {
     networks: {
